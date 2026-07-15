@@ -1,0 +1,289 @@
+/* ═══════════════════════════════════════════
+   ANIMATIONS & TRANSITIONS
+   ═══════════════════════════════════════════ */
+
+/* Page transitions */
+.screen-enter {
+  animation: screen-slide-in 0.4s ease-out;
+}
+
+@keyframes screen-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card stagger animation */
+.stagger-enter > * {
+  opacity: 0;
+  animation: stagger-fade 0.4s ease-out forwards;
+}
+
+.stagger-enter > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger-enter > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger-enter > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger-enter > *:nth-child(4) { animation-delay: 0.2s; }
+.stagger-enter > *:nth-child(5) { animation-delay: 0.25s; }
+.stagger-enter > *:nth-child(6) { animation-delay: 0.3s; }
+.stagger-enter > *:nth-child(7) { animation-delay: 0.35s; }
+.stagger-enter > *:nth-child(8) { animation-delay: 0.4s; }
+.stagger-enter > *:nth-child(9) { animation-delay: 0.45s; }
+.stagger-enter > *:nth-child(10) { animation-delay: 0.5s; }
+.stagger-enter > *:nth-child(11) { animation-delay: 0.55s; }
+.stagger-enter > *:nth-child(12) { animation-delay: 0.6s; }
+.stagger-enter > *:nth-child(13) { animation-delay: 0.65s; }
+
+@keyframes stagger-fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse glow for critical values */
+.glow-pulse {
+  animation: glow-pulse-anim 1.5s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-anim {
+  0%, 100% {
+    text-shadow: 0 0 5px currentColor;
+  }
+  50% {
+    text-shadow: 0 0 20px currentColor, 0 0 40px currentColor;
+  }
+}
+
+/* Score popup animations */
+.score-popup {
+  position: fixed;
+  pointer-events: none;
+  z-index: 500;
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 1.5rem;
+  animation: score-pop 1.8s ease-out forwards;
+}
+
+@keyframes score-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.2);
+  }
+  30% {
+    transform: translateY(-20px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px) scale(0.8);
+  }
+}
+
+/* Loading spinner */
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--border-glass);
+  border-top-color: var(--accent-green);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan));
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+/* Result reveal animation */
+.result-reveal {
+  animation: result-slide 0.3s ease-out;
+}
+
+@keyframes result-slide {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Shake animation for wrong answers */
+.shake {
+  animation: shake-anim 0.5s ease;
+}
+
+@keyframes shake-anim {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+/* Success flash */
+.success-flash {
+  animation: flash-green 0.6s ease;
+}
+
+@keyframes flash-green {
+  0% { box-shadow: none; }
+  50% { box-shadow: 0 0 30px var(--accent-green-glow), inset 0 0 20px var(--accent-green-glow); }
+  100% { box-shadow: none; }
+}
+
+/* Floating particle effect on home */
+.particle {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  animation: float-particle 8s linear infinite;
+}
+
+@keyframes float-particle {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh) translateX(0);
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10vh) translateX(50px);
+  }
+}
+
+/* Ripple effect on button click */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  animation: ripple-anim 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Test item selection animation */
+.test-item.just-selected {
+  animation: test-select 0.3s ease;
+}
+
+@keyframes test-select {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); background: rgba(0, 230, 118, 0.15); }
+  100% { transform: scale(1); }
+}
+
+/* Alarm border flash for monitor */
+.alarm-border {
+  animation: alarm-flash 1s ease-in-out infinite;
+}
+
+@keyframes alarm-flash {
+  0%, 100% {
+    border-color: #1a2332;
+  }
+  50% {
+    border-color: var(--color-danger);
+    box-shadow: 0 0 20px var(--color-danger-glow);
+  }
+}
+
+/* Typing effect for patient history */
+.typing-cursor::after {
+  content: '|';
+  animation: blink-cursor 0.8s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Smooth counter animation helper class */
+.counter-animate {
+  transition: all 0.3s ease;
+}
+
+/* Confetti-like celebration for high scores */
+.celebrate {
+  position: relative;
+}
+
+.celebrate::before,
+.celebrate::after {
+  content: '🎉';
+  position: absolute;
+  font-size: 2rem;
+  animation: celebrate-float 2s ease-out forwards;
+  pointer-events: none;
+}
+
+.celebrate::before {
+  top: -20px;
+  left: 20%;
+  animation-delay: 0.1s;
+}
+
+.celebrate::after {
+  content: '🏆';
+  top: -20px;
+  right: 20%;
+  animation-delay: 0.3s;
+}
+
+@keyframes celebrate-float {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) rotate(720deg);
+  }
+}

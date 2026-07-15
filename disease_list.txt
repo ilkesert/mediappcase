@@ -1,0 +1,412 @@
+Akut Miyokard İnfarktüsü (STEMI)
+Akut Miyokard İnfarktüsü (NSTEMI)
+Stabil Anjina Pektoris
+Kalp Yetmezliği
+Atriyal Fibrilasyon
+Serebrovasküler Olay (İskemik İnme)
+Akut Pulmoner Emboli
+Akut Apandisit
+Sepsis ve Septik Şok
+Diyabetik Ketoasidoz (DKA)
+Anafilaktik Şok
+Akut Pankreatit
+Pnömoni (Zatürre)
+Akut Üst GİS Kanaması
+KOAH Akut Alevlenmesi
+Akut Astım Atağı
+Böbrek Koliği (Nefrolitiyazis)
+Akut Kolesistit
+Bakteriyel Menenjit
+Aort Diseksiyonu
+İleus (Bağırsak Obstrüksiyonu)
+Hipertansif Ensefalopati
+Derin Ven Trombozu (DVT)
+Spontan Pnömotoraks
+Perfore Peptik Ülser
+Testis Torsiyonu
+Dış Gebelik Rüptürü
+Akut Açı Kapanması Glokomu (Kriz)
+Durdurulamayan Epistaksis (Burun Kanaması)
+Spesifiye Edilmemiş Baş Ağrısı
+Epidural ve Subdural Hematom
+Subaraknoid Kanama (SAK)
+Akut Perikardit ve Kardiyak Tamponad
+Transvers Miyelit
+Akut Karaciğer Yetmezliği
+Hiperkalemiye Bağlı Kardiyak Aritmiler
+Hipoglisemi Koması
+Myastenik Kriz
+Tiroid Fırtınası
+Rabdomiyoliz
+Akut Üriner Retansiyon
+Nekrotizan Fasiit
+Septik Artrit
+Karbonmonoksit Zehirlenmesi
+Akut Solunum Sıkıntısı Sendromu (ARDS)
+Yaygın Damar İçi Pıhtılaşma (DIC)
+Akut Mezenter İskemi
+Strangüle (Boğulmuş) Herni
+Özofagus Perforasyonu
+Plasenta Dekolmanı
+Preeklampsi ve Eklampsi
+Akut Adrenal Kriz (Addison)
+İlaç Toksisitesi ve Aşırı Doz Alımı
+Hepatorenal Sendrom
+Esansiyel Hipertansiyon
+Tip 2 Diyabet
+Gastroözofajial Reflü Hastalığı (GÖRH)
+Demir Eksikliği Anemisi
+Migren
+Gerilim Tipi Baş Ağrısı
+Hiperlipidemi
+Osteoartrit (Kireçlenme)
+Akut Rinofarenjit (Nezle)
+Majör Depresif Bozukluk
+Yaygın Anksiyete Bozukluğu
+İrritabl Bağırsak Sendromu (İBS)
+Hipotiroidi (Hashimoto Tiroiditi)
+Alerjik Rinit (Bahar Alerjisi)
+Üriner Sistem Enfeksiyonu (Sistit)
+Akut Bronşit
+Lomber Disk Hernisi (Bel Fıtığı)
+Servikal Disk Hernisi (Boyun Fıtığı)
+Atopik Dermatit (Egzama)
+Kolelitiazis (Safra Kesesi Taşı)
+B12 Vitamin Eksikliği Anemisi
+Fibromiyalji
+Hipertiroidi (Graves Hastalığı)
+Romatoit Artrit
+Sedef Hastalığı (Psoriazis)
+Kronik Venöz Yetmezlik (Varis)
+Benign Prostat Hiperplazisi (BPH)
+Gut Hastalığı
+Osteoporoz
+Senil Katarakt (Nükleer Skleroz)
+Vitiligo
+Akne Vulgaris
+Kronik Ürtiker
+Obstrüktif Uyku Apne Sendromu (OUAS)
+Karpal Tünel Sendromu
+Helikobakter Pilori Gastriti
+İnternal ve Eksternal Hemoroid
+Anal Fissür
+Plantar Fasiit
+Lateral Epikondilit (Tenisçi Dirseği)
+Alopesi Areata (Saç Kıran)
+Nonalkolik Yağlı Karaciğer Hastalığı
+Benign Paroksismal Pozisyonel Vertigo (BPPV)
+Tinnitus (Kulak Çınlaması)
+Tinea Pedis (Ayak Mantarı)
+Onikomikoz (Tırnak Mantarı)
+Tekrarlayan Aftöz Stomatit
+Kronik Fonksiyonel Konstipasyon (Kabızlık)
+Vajinal Kandidiyazis
+İdiyopatik Skolyoz
+Kuru Göz Sendromu (Keratokonjonktivitis Sikka)
+Primer Dismenore
+Akut Tübüler Nekroz
+Akut İnterstisyel Nefrit
+Minimal Değişiklik Hastalığı (Minimal Change Disease)
+Membranöz Glomerulonefrit
+Fokal Segmental Glomeruloskleroz (FSGS)
+Alport Sendromu
+Böbrek Arter Stenozu
+Üremik Ensefalopati
+Vezikoüreteral Reflü (VUR)
+Nörojenik Mesane
+Üretrit
+Epididimit ve Orşit
+Fournier Gangreni
+Parafimozis ve Fimozis
+Priapizm
+Peyronie Hastalığı
+Varikosel
+Polikistik Over Sendromu (PKOS)
+Endometriyozis
+Adenomiyozis
+Uterus Miyomları (Leiomyom)
+Pelvik İnflamatuar Hastalık (PİH)
+Bakteriyel Vajinozis
+Trikomoniyazis
+Hiperemezis Gravidarum
+Gestasyonel Diyabet
+Mol Gebeliği (Hidatidiform Mol)
+Servikal Yetersizlik
+Postpartum Kanama
+Sheehan Sendromu (Postpartum Hipopitüitarizm)
+Diabetes Insipidus
+Uygunsuz ADH Salınımı Sendromu (SIADH)
+Akromegali ve Gigantizm
+Prolaktinoma
+Cushing Hastalığı
+Primer Hiperaldosteronizm (Conn Sendromu)
+Feokromositoma
+Kongenital Adrenal Hiperplazi
+Primer Hiperparatiroidi
+Hypoparatiroidi
+Paget Kemik Hastalığı
+Osteomalazi ve Raşitizm
+Skorbit (C Vitamini Eksikliği)
+Beriberi (Tiamin Eksikliği)
+Pellagra (Niasin Eksikliği)
+Pernisiyöz Anemi
+Glikojen Depo Hastalıkları
+Gaucher Hastalığı
+Niemann-Pick Hastalığı
+Tay-Sachs Hastalığı
+Fenilketonüri
+Akçaağaç Şurubu İdrar Hastalığı (MSUD)
+Alkaptonüri
+Homosistinüri
+Kistik Fibrozis
+Alfa Talasemi
+Beta Talasemi (Akdeniz Anemisi)
+Orak Hücreli Anemi
+Herediter Sferositoz
+Glukoz-6-Fosfat Dehidrogenaz Eksikliği
+Otoimmün Hemolitik Anemi
+Paroksizmal Gece Hemoglobinürisi (PNH)
+Aplastik Anemi
+İdiyopatik Trombositopenik Purpura (İTP)
+Trombotik Trombositopenik Purpura (TTP)
+Hemofili A ve Hemofili B
+Von Willebrand Hastalığı
+Antifosfolipid Antikor Sendromu
+Herediter Anjioödem
+Familial Akdeniz Ateşi (FMF)
+Behçet Hastalığı
+Takayasu Arteriti
+Granülomatöz Polianjitis (Wegener)
+Eozinofilik Granülomatöz Polianjitis (Churg-Strauss)
+Mikroskobik Polianjitis
+Poliarteritis Nodosa (PAN)
+Kawasaki Hastalığı
+Dermatomiyozit ve Polimiyozit
+Karışık Bağ Dokusu Hastalığı (MCTD)
+Reaktif Artrit (Reiter Sendromu)
+Enteropatik Artrit
+Avasküler Kemik Nekrozu
+Dupuytren Kontraktürü
+Tetik Parmak (Stenozan Tenosinovit)
+De Quervain Tenosinoviti
+Baker Kisti
+Osgood-Schlatter Hastalığı
+Legg-Calvé-Perthes Hastalığı
+Gelişimsel Kalça Displazisi
+Osteogenezis İmperfekta
+Akut Larenjotrakeobronşit (Krup)
+Alveoler Proteinozis
+Aspergilloma
+Bisinozis
+Löffler Sendromu
+Goodpasture Sendromu
+Chagas Hastalığı
+Leishmaniasis (Şark Çıbanı / Kaleazar)
+Şistozomiyazis
+Hidatik Kist (Ekinokokozis)
+Toksoplazmozis
+Listeriyozis
+Bruselloz
+Tularemi
+Leptospiroz
+Lyme Hastalığı
+Sıtma (Malarya)
+Dang Humması
+Kuduz (Rabies)
+Tetanoz
+Botulizm
+Gazlı Gangren (Klostridiyal Miyonekroz)
+Lepra (Hansen Hastalığı)
+Aktinomikoz
+Nokardiyozis
+Histoplazmozis
+Koksidiyoidomikoz
+Blastomikoz
+Kriptokokoz
+Mucormikoz
+Prion Hastalıkları (Creutzfeldt-Jakob dahil)
+Progresif Multifokal Lökoensefalopati (PML)
+Subakut Sklerozan Panensefalit (SSPE)
+Nörofibromatozis Tip 1 ve Tip 2
+Tüberoz Skleroz
+Sturge-Weber Sendromu
+Von Hippel-Lindau Hastalığı
+Marfan Sendromu
+Ehlers-Danlos Sendromu
+Psödotoksantoma Elastikum
+Fibröz Displazi
+Akondroplazi
+Albers-Schönberg Hastalığı (Osteopetrozis)
+Langerhans Hücreli Histiyositoz
+Burkitt Lenfoma
+Mikozis Fungoides
+Sezary Sendromu
+Esansiyel Kriyoglobulinemi
+Histerik Konversiyon Bozukluğu
+Somatizasyon Bozukluğu
+Hipokondriyazis (Hastalık Kaygısı Bozukluğu)
+Bipolar Bozukluk Tip 1 ve Tip 2
+Şizofreni
+Şizoaffektif Bozukluk
+Sanrılı Bozukluk
+Obsesif Kompulsif Bozukluk (OKB)
+Travma Sonrası Stres Bozukluğu (TSSB)
+Sınır Kişilik Bozukluğu (Borderline)
+Antisoyal Kişilik Bozukluğu
+Narsisistik Kişilik Bozukluğu
+Anoreksiya Nervoza
+Bulimiya Nervoza
+Tıkınırcasına Yeme Bozukluğu
+Narkolepsi
+İnsomni (Kronik Uykusuzluk)
+Huzursuz Bacaklar Sendromu (Willis-Ekbom)
+Periyodik Uzuv Hareket Bozukluğu
+Yaşa Bağlı Makula Dejenerasyonu
+Retinitis Pigmentosa
+Retina Dekolmanı
+Diyabetik Retinopati
+Hipertansif Retinopati
+Santral Retina Arter Tıkanıklığı
+Santral Retina Ven Tıkanıklığı
+Akut Optik Nevrit (Demyelinizan)
+Papilödem
+Şalazyon ve Hordeolum (Arpacık)
+Blefarit
+Dakriyosistit
+Otoskleroz
+Meniere Hastalığı
+Vestibüler Nörinit
+Kolesteatom
+Akut Barotravma
+Presbiakuzi
+Lökoplaki ve Eritroplaki
+Oral Likend Planus
+IgG4 İlişkili Hastalık
+Akalazya
+Diffüz Özofageal Spazm
+Zenker Divertikülü
+Mallory-Weiss Sendromu
+Boerhaave Sendromu
+Çölyak Hastalığı
+Crohn Hastalığı
+Ülseratif Kolit
+Divertikülit
+Meckel Divertiküliti
+İskemik Kolit
+Toksik Megakolon
+Whipple Hastalığı
+Tropikal Sprue
+Kısa Bağırsak Sendromu
+Gilbert Sendromu
+Crigler-Najjar Sendromu Tip 1 ve Tip 2
+Dubin-Johnson Sendromu
+Rotor Sendromu
+Budd-Chiari Sendromu
+Sinüzoidal Tıkanıklık Sendromu
+Akut Mezenterik Lenfadenit
+Akut Küme Baş Ağrısı (Cluster)
+Trigeminal Nevralji (Tic Douloureux)
+Çocukluk Çağı Absans Epilepsisi
+West Sendromu (İnfantil Spazm)
+Status Epileptikus (Konvülzif)
+Geçici İskemik Atak (TİA)
+Wallenberg Sendromu (Lateral Medüller)
+İçe Kilitlenme (Locked-in) Sendromu
+Parkinson Hastalığı
+Multiple Skleroz (Atak-Düzelme Tipi)
+Guillain-Barré Sendromu
+Miyasteni Gravis (Kronik Jeneralize)
+Amyotrofık Lateral Skleroz (ALS)
+Alzheimer Hastalığı (Demans)
+Panik Bozukluk (Agorafobili)
+Pemfigus Vulgaris
+Büllöz Pemfigoid
+Uyuz (Skabies) Enfeksiyonu
+Behçet Hastalığı
+Akut Otitis Media (Kulak İltihabı)
+Yaşa Bağlı Makula Dejenerasyonu (Sarı Nokta)
+Akut Ürtiker ve Anjioödem
+Alerjik Kontakt Dermatit
+Stevens-Johnson Sendromu (SJS) / TEN
+İdiopatik İntrakraniyal Hipertansiyon (Psödotümör Serebri)
+Vasküler Demans (Binswanger Hastalığı)
+Huntington Hastalığı (Kore)
+Esansiyel Tremor
+Wilson Hastalığı (Hepatolentiküler Dejenerasyon)
+Siringomiyeli (Pelerin Tarzı Duyu Kaybı)
+Miyotonik Distrofi (Steinert Hastalığı)
+Duchenne Kas Distrofisi (DMD)
+Akut Epidural Hematom (Beyin Kanaması)
+Normal Basınçlı Hidrosefali (NPH - Hakim Sendromu)
+Glioblastoma Multiforme (GBM)
+Meningiyom (İyi Huylu Beyin Tümörü)
+Pitiriyazis Rozea (Madalyon Hastalığı)
+Rozasea (Gül Hastalığı)
+Seboroik Dermatit
+Eritema Multiforme (EM)
+Bazal Hücreli Karsinom (BCC)
+Yassı Hücreli Karsinom (SCC)
+Herpes Zoster (Zona / Gece Yanığı)
+İmpetigo (Bulaşıcı Cilt Hastalığı)
+Pleomorfik Adenom (Benign Mikst Tümör)
+Warthin Tümörü (Papiller Kistadenoma Lenfomatosum)
+Mukoepidermoid Karsinom (Tükürük Bezi Kanseri)
+Adenoid Kistik Karsinom (Damak Tümörü)
+Sialolithiazis (Tükürük Bezi Taşı)
+Plummer-Vinson Sendromu
+Tilozis (Özofagus Kanser Riski)
+Menetrier Hastalığı (Dev Gastrik Rugae)
+Gastrointestinal Stromal Tümör (GİST)
+Mide Adenokarsinomu (Mide Kanseri)
+Hirschsprung Hastalığı (Konjenital Megakolon)
+Angiodisplazi (Barsak Damar Bozukluğu)
+Soliter Rektal Ülser Sendromu
+Peutz-Jeghers Sendromu
+Gardner Sendromu
+Turcot Sendromu (Beyin Tümörü + Polip)
+Ekstrahepatik Biliyer Atrezi
+Reye Sendromu (Aspirin Reaksiyonu)
+Caroli Hastalığı
+Alagille Sendromu (Safra Kanalı Azlığı)
+Peliozis Hepatis (Kan Göllenmesi)
+İnsülinoma (Pankreas Adacık Tümörü)
+Gastrinoma (Zollinger-Ellison Sendromu)
+VIPoma (Verner-Morrison Sendromu)
+Açlık Ketozu (Starvation Ketosis)
+Paget-Schroetter Sendromu (Sporcu Trombozu)
+Fonksiyonel Dispepsi
+Trakeostomi Acilleri (Tıkanıklık)
+Taktik Travma (MARCH Protokolü)
+Ventilatör Asenkronisi
+Karbonkül
+Meningokoksemi
+Kızıl Hastalığı (Scarlet Fever)
+Stafilokokal Haşlanmış Deri Sendromu (SSSS)
+Herpes Simpleks (Herpes Simplex / Uçuk)
+Tinea Kapitis (Tinea Capitis / Saç Kıran)
+Oral Kandidiyazis (Oral Candidiasis / Pamukçuk)
+Morbiliform İlaç Erüpsiyonu
+Eritema Nodosum
+Tifo (Typhoid Fever)
+Tifilitis (Nötropenik Enterokolit)
+Kedi Tırnağı Hastalığı (Cat Scratch Disease)
+Ogilvie Sendromu
+Tümör Lizis Sendromu (TLS)
+Vena Cava Superior Sendromu (SVCS)
+POTS (Postural Ortostatik Taşikardi Sendromu)
+Wernicke Ensefalopatisi
+Çiçek Hastalığı (Smallpox)
+Eritema Enfeksiyozum (Beşinci Hastalık)
+Roseola Infantum (Altıncı Hastalık)
+Akut Alkol Zehirlenmesi
+Omuz Çıkığı (Anterior Dislokasyon)
+Menisküs Yırtığı ve Bağ Kopmaları
+Peritonit (Karın Zarı İltihabı)
+TTP (Trombotik Trombositopenik Purpura) / HÜS
+Abdominal Aort Anevrizması (AAA)
+Akut Arter İskemisi (Akut Ekstremite İskemisi)
+Böbrek Taşı (Renal Kolik / Nefrolitiazis)
+
+
+
+

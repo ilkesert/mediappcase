@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedSim 🏥 - İnteraktif Tıbbi Simülasyon Oyunu</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Doktorluğa hazırlık simülasyonu. 200+ hastalık, gerçek zamanlı hasta monitörü ve detaylı test seçimi ile tıbbi tanı ve tedavi oyunu.">
+  
+  <!-- Core and Component Stylesheet Imports -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/monitor.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <nav class="navbar" id="app-navbar">
+    <a href="#" class="navbar-brand" onclick="showHomeScreen()">
+      <span class="logo-icon">🏥</span>
+      <span class="brand-text">MedSim</span>
+    </a>
+    
+    <div class="navbar-stats">
+      <div class="stat-item">
+        <span>Vaka No:</span>
+        <span class="stat-value" id="case-progress">1</span>
+      </div>
+      <div class="stat-item">
+        <span>Skor:</span>
+        <span class="stat-value" id="score-value">500</span>
+      </div>
+    </div>
+
+    <div class="navbar-actions">
+      <button class="btn btn-secondary btn-sm" onclick="showHomeScreen()">Ana Menü</button>
+      <button class="btn btn-primary btn-sm" onclick="showArchiveScreen()" style="background: var(--accent-blue-dim); border-color: var(--accent-blue);">Hastalık Arşivi 📚</button>
+      <button class="btn btn-ghost btn-sm" onclick="window.game.resetGame()">Sıfırla</button>
+    </div>
+  </nav>
+
+  <div class="app-container">
+
+    <!-- ═══════════════════════════════════════════
+         1. HOME SCREEN / LANDING MENU
+         ═══════════════════════════════════════════ -->
+    <div class="screen home-screen active" id="home-screen">
+      <div class="home-hero">
+        <h1>Doktorluğa Hazırlık <br><span class="gradient-text">Tıbbi Vaka Simülasyonu</span></h1>
+        <p>
+          Hasta monitörünü izle, şikayetlerini ve hikayesini analiz et. 
+          Yüzlerce test arasından doğru olanları seç, teşhisini koy ve hayat kurtaracak tedaviyi uygula.
+        </p>
+        <div class="flex gap-sm justify-center" style="margin-top: var(--space-md); flex-wrap: wrap;">
+          <button class="btn btn-primary btn-lg" onclick="window.game.init(); showGameScreen();">Genel Seriye Başla</button>
+          <button class="btn btn-secondary btn-lg" onclick="showArchiveScreen()">📚 Mega Hastalık Arşivi</button>
+        </div>
+      </div>
+
+      <div class="home-stats-row">
+        <div class="home-stat">
+          <div class="number" id="stats-total-diseases">500</div>
+          <div class="label">Farklı Hastalık</div>
+        </div>
+        <div class="home-stat">
+          <div class="number">100%</div>
+          <div class="label">Gerçekçi Laboratuvar</div>
+        </div>
+        <div class="home-stat">
+          <div class="number">EKG</div>
+          <div class="label">Canlı Vital Monitör</div>
+        </div>
+      </div>
+
+      <h2 class="mb-md text-muted" style="font-family: var(--font-display); font-size: 1.4rem;">Sistemlere Göre Vaka Çalış</h2>
+      <div class="category-grid">
+        <div class="category-card" style="--cat-color: #ff1744;" onclick="startGameWithCategory('kardiyovaskuler')">
+          <span class="cat-icon">❤️</span>
+          <div class="cat-name">Kardiyovasküler</div>
+          <div class="cat-count" id="count-kardiyovaskuler">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #00e5ff;" onclick="startGameWithCategory('solunum')">
+          <span class="cat-icon">🫁</span>
+          <div class="cat-name">Solunum Sistemi</div>
+          <div class="cat-count" id="count-solunum">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #ff9100;" onclick="startGameWithCategory('gastrointestinal')">
+          <span class="cat-icon">🍕</span>
+          <div class="cat-name">Gastrointestinal</div>
+          <div class="cat-count" id="count-gastrointestinal">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #e040fb;" onclick="startGameWithCategory('endokrin')">
+          <span class="cat-icon">🦋</span>
+          <div class="cat-name">Endokrin Sistem</div>
+          <div class="cat-count" id="count-endokrin">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #b388ff;" onclick="startGameWithCategory('noroloji')">
+          <span class="cat-icon">🧠</span>
+          <div class="cat-name">Nöroloji</div>
+          <div class="cat-count" id="count-noroloji">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #40c4ff;" onclick="startGameWithCategory('nefroloji')">
+          <span class="cat-icon">🧪</span>
+          <div class="cat-name">Nefroloji / Üroloji</div>
+          <div class="cat-count" id="count-nefroloji">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #ff1744;" onclick="startGameWithCategory('hematoloji')">
+          <span class="cat-icon">🩸</span>
+          <div class="cat-name">Hematoloji</div>
+          <div class="cat-count" id="count-hematoloji">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #00e676;" onclick="startGameWithCategory('romatoloji')">
+          <span class="cat-icon">🦴</span>
+          <div class="cat-name">Romatoloji</div>
+          <div class="cat-count" id="count-romatoloji">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #ffeb3b;" onclick="startGameWithCategory('enfeksiyon')">
+          <span class="cat-icon">🦠</span>
+          <div class="cat-name">Enfeksiyon</div>
+          <div class="cat-count" id="count-enfeksiyon">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #d500f9;" onclick="startGameWithCategory('dermatoloji')">
+          <span class="cat-icon">🧴</span>
+          <div class="cat-name">Dermatoloji</div>
+          <div class="cat-count" id="count-dermatoloji">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #ff4081;" onclick="startGameWithCategory('kadinhastaliklari')">
+          <span class="cat-icon">👶</span>
+          <div class="cat-name">Kadın Hastalıkları</div>
+          <div class="cat-count" id="count-kadinhastaliklari">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #ff1744;" onclick="startGameWithCategory('acil')">
+          <span class="cat-icon">⚡</span>
+          <div class="cat-name">Acil Tıp / Travma</div>
+          <div class="cat-count" id="count-acil">Yükleniyor...</div>
+        </div>
+        <div class="category-card" style="--cat-color: #e040fb;" onclick="startGameWithCategory('psikiyatri')">
+          <span class="cat-icon">💭</span>
+          <div class="cat-name">Psikiyatri</div>
+          <div class="cat-count" id="count-psikiyatri">Yükleniyor...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         2. MAIN GAME SCREEN LAYOUT
+         ═══════════════════════════════════════════ -->
+    <div class="screen game-screen" id="game-screen">
+      <div class="game-layout show-patient">
+        <!-- Mobile Pane Tabs -->
+        <div class="mobile-game-tabs" id="mobile-game-tabs">
+          <button class="mobile-game-tab active" onclick="switchMobileGamePane('patient')">👤 Hasta & Monitör</button>
+          <button class="mobile-game-tab" onclick="switchMobileGamePane('lab')">🔬 Testler & Sonuçlar</button>
+        </div>
+        
+        <!-- COLUMN 1: Real-time Patient Vital Monitor -->
+        <aside class="monitor-panel">
+          <div class="monitor-container" id="monitor-container">
+            <div class="monitor-header">
+              <span class="monitor-brand">Bedside Monitor Pro</span>
+              <span class="monitor-time" id="monitor-clock">SYS OK</span>
+            </div>
+
+            <!-- Waveform 1: ECG -->
+            <div class="waveform-section">
+              <span class="waveform-label ecg">ECG II (mV)</span>
+              <canvas id="ecg-canvas" class="waveform-canvas" height="100"></canvas>
+            </div>
+
+            <!-- Waveform 2: SpO2 Pleth -->
+            <div class="waveform-section">
+              <span class="waveform-label spo2">Pleth SpO2 (%)</span>
+              <canvas id="spo2-canvas" class="waveform-canvas" height="80"></canvas>
+            </div>
+
+            <!-- Numeric Vital Signs -->
+            <div class="vitals-grid">
+              <div class="vital-box hr" id="box-hr">
+                <div class="vital-label">HR <span class="heart-icon">♥</span></div>
+                <div class="vital-number large" id="monitor-hr">72</div>
+                <div class="vital-unit">bpm</div>
+              </div>
+              <div class="vital-box bp" id="box-bp">
+                <div class="vital-label">NIBP</div>
+                <div class="vital-number medium" id="monitor-bp">120/80</div>
+                <div class="vital-unit">mmHg</div>
+              </div>
+              <div class="vital-box spo2-val" id="box-spo2">
+                <div class="vital-label">SpO2</div>
+                <div class="vital-number large" id="monitor-spo2">98</div>
+                <div class="vital-unit">%</div>
+              </div>
+              <div class="vital-box rr" id="box-rr">
+                <div class="vital-label">RESP</div>
+                <div class="vital-number medium" id="monitor-rr">16</div>
+                <div class="vital-unit">/min</div>
+              </div>
+              <div class="vital-box temp" id="box-temp">
+                <div class="vital-label">TEMP</div>
+                <div class="vital-number medium" id="monitor-temp">36.8</div>
+                <div class="vital-unit">°C</div>
+              </div>
+              <div class="vital-box map-val" id="box-map">
+                <div class="vital-label">MAP</div>
+                <div class="vital-number medium">93</div>
+                <div class="vital-unit">mmHg</div>
+              </div>
+            </div>
+
+            <div class="monitor-status-bar">
+              <div class="monitor-status-dot"></div>
+              <span class="monitor-status-text">MONITORING PATIENT SENSORS ACTIVE</span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- COLUMN 2 TOP: Patient Anamnesis / Presentation -->
+        <main class="patient-panel glass-card">
+          <div class="glass-card-header">
+            <h3>👤 Hasta Sunumu & Anamnez</h3>
+            <span class="text-mono text-muted">ID: #<span id="patient-id">1294</span></span>
+          </div>
+          <div class="glass-card-body">
+            <div class="patient-header">
+              <div class="patient-avatar" id="patient-avatar-text">👨</div>
+              <div>
+                <h2 class="patient-name" id="patient-name">Yükleniyor...</h2>
+                <div class="patient-demo" id="patient-demo">-- Yaş, --, --cm, --kg</div>
+              </div>
+            </div>
+
+            <div id="patient-complaints">
+              <!-- Complaints badges go here -->
+            </div>
+
+            <div class="info-section">
+              <div class="info-section-title">🏥 Başvuru Hikayesi</div>
+              <p id="patient-story">Hikaye yükleniyor...</p>
+            </div>
+
+            <div class="flex gap-sm">
+              <div class="info-section flex-1">
+                <div class="info-section-title">📋 Özgeçmiş (Kronik)</div>
+                <ul id="patient-pmh"></ul>
+              </div>
+              <div class="info-section flex-1">
+                <div class="info-section-title">💊 Kullandığı İlaçlar</div>
+                <ul id="patient-meds"></ul>
+              </div>
+            </div>
+
+            <!-- NEW: Allergies & Risk Factors -->
+            <div class="flex gap-sm">
+              <div class="info-section flex-1">
+                <div class="info-section-title" style="color: var(--color-danger);">⚠️ İlaç & Madde Alerjileri</div>
+                <p id="patient-allergies" style="font-weight: 600; color: var(--text-primary);">Yükleniyor...</p>
+              </div>
+              <div class="info-section flex-1">
+                <div class="info-section-title">⚡ Risk Faktörleri</div>
+                <ul id="patient-risks"></ul>
+              </div>
+            </div>
+
+            <!-- NEW: Review of Systems (Sistemik Sorgu) -->
+            <div class="info-section">
+              <div class="info-section-title">🔎 Sistemik Sorgu (ROS)</div>
+              <p id="patient-ros" style="font-style: italic;">Yükleniyor...</p>
+            </div>
+
+            <div class="info-section">
+              <div class="info-section-title">🚬 Alışkanlıklar & Sosyal Öykü</div>
+              <ul id="patient-habits"></ul>
+            </div>
+
+            <div class="info-section">
+              <div class="info-section-title">🩺 Fizik Muayene Bulguları</div>
+              <div id="fm-container" class="mt-xs">
+                <button class="btn btn-secondary btn-sm" id="btn-do-fm" onclick="window.game.doPhysicalExam()" style="margin-top: 4px;">🩺 Fizik Muayene Yap (İpucu Al)</button>
+                <p id="patient-fm" style="display: none; margin-top: 4px; font-style: italic; color: var(--text-primary);"></p>
+              </div>
+            </div>
+
+            <!-- NEW: Interactive Dialogue (Hasta ile Konuş) -->
+            <div class="info-section mt-lg" style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-md);">
+              <div class="info-section-title">💬 Hasta ile Konuş (Anamnez Soruları)</div>
+              <div class="flex gap-sm mb-md" style="flex-wrap: wrap;">
+                <button class="btn btn-ghost btn-sm" onclick="window.game.askPatientQuestion('onset')">🕒 Ne zaman başladı?</button>
+                <button class="btn btn-ghost btn-sm" onclick="window.game.askPatientQuestion('character')">📍 Ağrı nereye yayılıyor?</button>
+                <button class="btn btn-ghost btn-sm" onclick="window.game.askPatientQuestion('associated')">🤢 Ek şikayetleriniz?</button>
+                <button class="btn btn-ghost btn-sm" onclick="window.game.askPatientQuestion('family')">🧬 Aile öykünüz?</button>
+                <button class="btn btn-ghost btn-sm" onclick="window.game.askPatientQuestion('allergies')">💊 Alerjiniz var mı?</button>
+                <button class="btn btn-ghost btn-sm" onclick="window.game.askPatientQuestion('prior_hospitalization')">🏥 Hastane yatış öyküsü?</button>
+              </div>
+              <div id="chat-history" style="background: rgba(0,0,0,0.2); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: var(--space-md); max-height: 150px; overflow-y: auto;">
+                <div class="text-center text-muted py-sm" id="chat-placeholder" style="font-size: 0.8rem;">
+                  💬 Hastaya yukarıdaki sorulardan birini yönelterek konuşabilirsiniz.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </main>
+
+        <!-- COLUMN 2 BOTTOM: Test Ordering or Results Display -->
+        <section class="work-panel glass-card">
+          <div class="glass-card-header" style="flex-direction: column; gap: var(--space-sm); align-items: stretch; padding: var(--space-sm) var(--space-lg);">
+            <div class="search-wrapper" style="margin-bottom: 2px;">
+              <span class="search-icon">🔍</span>
+              <input type="text" class="search-input" id="test-search-input" placeholder="🔬 Tetkik veya test arayın... (Örn: CBC, RF, Troponin, Potasyum, BT, EKG)" style="padding-top: 8px; padding-bottom: 8px;">
+            </div>
+            <div class="tabs" id="tabs-header" style="margin-bottom: 0; overflow-x: auto; white-space: nowrap; flex-wrap: nowrap;">
+              <!-- Lab tabs generated by JS -->
+              <button class="tab" id="tab-btn-results" onclick="switchTab('results')">📋 Test Sonuçları</button>
+              <button class="tab" id="tab-btn-drugs" onclick="switchTab('drugs')">💊 Tedavi & İlaçlar</button>
+            </div>
+          </div>
+          
+          <div class="glass-card-body overflow-auto flex-1">
+            <!-- Dynamic lab categories are generated here -->
+            <div class="tab-content" id="tab-content-results">
+              <div class="results-container" id="results-list">
+                <!-- Lab results go here -->
+              </div>
+            </div>
+            <!-- Search Results Dynamic Tab -->
+            <div class="tab-content" id="tab-content-search">
+              <div class="test-subcategory">Arama Sonuçları</div>
+              <div class="test-list" id="search-results-list">
+                <!-- Filtered tests here -->
+              </div>
+            </div>
+            <!-- Tedavi & İlaçlar Tab Content -->
+            <div class="tab-content" id="tab-content-drugs">
+              <div class="test-subcategory">Acil Tedavi / İlaç ve Prosedür Uygulama</div>
+              <div class="search-wrapper" style="margin-bottom: var(--space-sm);">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="drug-search-input" placeholder="💊 İlaç veya prosedür arayın... (Örn: Aspirin, Heparin, SF, Entübasyon, Adrenalin)" oninput="filterDrugsUI()">
+              </div>
+              <div id="drugs-tabs-header" class="tabs" style="margin-bottom: var(--space-md); overflow-x: auto; flex-wrap: nowrap; border-bottom: 1px solid var(--border-glass); padding-bottom: 4px;">
+                <!-- Dynamic drug category buttons will be appended here -->
+              </div>
+              <div id="drugs-list-container" class="test-list">
+                <!-- Drug items list will be populated here -->
+              </div>
+            </div>
+            <div id="tabs-container">
+              <!-- Dynamically generated test select divs will append here -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ACTIONS ROW: Diagnosis, Send Tests, Treatment -->
+        <footer class="action-bar">
+          <div class="flex gap-sm">
+            <button class="btn btn-danger" onclick="window.game.giveUp()">🏳️ Pes Et</button>
+            <button class="btn btn-secondary" onclick="showConsultationModal()">📞 Uzmana Danış (Konsültasyon)</button>
+          </div>
+          <div class="flex gap-sm">
+            <button class="btn btn-secondary" onclick="showDiagnosisModal()">🏥 Teşhis Koy / Tanı</button>
+            <button class="btn btn-primary" onclick="window.game.sendOrderedTests()">🔬 Testleri Laboratuvara Gönder</button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         3. FINAL SUMMARY / SCOREBOARD SCREEN
+         ═══════════════════════════════════════════ -->
+    <div class="screen summary-screen" id="summary-screen">
+      <div class="glass-card summary-card py-xl">
+        <h2 class="mb-md text-bright" style="font-family: var(--font-display); font-size: 2rem;">Vaka Serisi Tamamlandı!</h2>
+        <p class="text-muted">Doktorluk hazırlık serisini tamamladın. İşte tıbbi performans raporun:</p>
+        
+        <div class="summary-score" id="final-score">850</div>
+        <p class="text-muted text-mono">FİNAL SKORU</p>
+
+        <div class="summary-breakdown">
+          <div class="breakdown-row">
+            <span class="label">Doğru Teşhis Konulan Vaka</span>
+            <span class="value positive" id="summary-diagnoses">8 / 10</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="label">Gereksiz Sipariş Edilen Test Sayısı</span>
+            <span class="value negative" id="summary-penalties">12</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="label">Kazanılan Teşhis Puanları</span>
+            <span class="value positive" id="summary-gains">+400</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="label">Net Performans Katsayısı</span>
+            <span class="value" id="summary-net">85%</span>
+          </div>
+        </div>
+
+        <div class="flex gap-sm justify-center">
+          <button class="btn btn-primary btn-lg" onclick="showHomeScreen()">Ana Menüye Dön</button>
+          <button class="btn btn-secondary btn-lg" onclick="showGameScreen()">Yeni Seriye Başla</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         4. MEGA DISEASE ARCHIVE SCREEN
+         ═══════════════════════════════════════════ -->
+    <div class="screen archive-screen" id="archive-screen">
+      <div class="glass-card" style="padding: var(--space-lg); margin-bottom: var(--space-lg);">
+        <div class="archive-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md); margin-bottom: var(--space-lg);">
+          <div>
+            <h1 style="font-family: var(--font-display); font-size: 2.2rem; color: var(--text-bright); margin-bottom: var(--space-xs);">📚 Mega Hastalık Arşivi</h1>
+            <p class="text-muted" style="font-size: 0.95rem;">374 benzersiz hastalık için klinik prezantasyon, tetkik gereksinimleri ve tedavi/ilaç protokolleri.</p>
+          </div>
+          <button class="btn btn-secondary" onclick="showHomeScreen()">◀ Ana Menüye Dön</button>
+        </div>
+
+        <!-- Filter and Search Controls -->
+        <div class="archive-controls" style="background: rgba(0,0,0,0.2); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: var(--space-md); margin-bottom: var(--space-md);">
+          <div class="flex gap-md" style="flex-wrap: wrap; align-items: center; margin-bottom: var(--space-md);">
+            <!-- Search bar -->
+            <div class="search-wrapper" style="flex: 2; min-width: 280px; margin-bottom: 0;">
+              <span class="search-icon">🔍</span>
+              <input type="text" class="search-input" id="archive-search-input" placeholder="Hastalık adı, şikayet, klinik hikaye veya tedavi arayın..." oninput="filterArchive()">
+            </div>
+            
+            <!-- Difficulty Filter -->
+            <div class="filter-wrapper" style="flex: 1; min-width: 150px;">
+              <select class="search-input" id="archive-difficulty-filter" onchange="filterArchive()" style="padding-left: 12px;">
+                <option value="">-- Tüm Zorluklar --</option>
+                <option value="easy">Kolay (Easy)</option>
+                <option value="medium">Orta (Medium)</option>
+                <option value="hard">Zor (Hard)</option>
+                <option value="expert">Uzman (Expert)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Category filter horizontal pills -->
+          <div class="info-section-title" style="margin-bottom: var(--space-xs); font-size: 0.75rem;">SİSTEM KATEGORİSİNE GÖRE FİLTRELE</div>
+          <div class="category-pills-container" id="archive-category-pills" style="display: flex; gap: var(--space-xs); overflow-x: auto; padding-bottom: 6px; scrollbar-width: thin;">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Live Statistics Bar -->
+        <div class="archive-stats" style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-secondary); background: rgba(255,255,255,0.02); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); margin-bottom: var(--space-md); flex-wrap: wrap; gap: var(--space-sm);">
+          <div>
+            Gösterilen: <span id="archive-match-count" style="font-weight: 700; color: var(--accent-green);">0</span> / <span id="archive-total-count">0</span> Hastalık
+          </div>
+          <div id="archive-active-filters-text" style="font-style: italic;">
+            Filtreler temiz.
+          </div>
+        </div>
+
+        <!-- Table Grid Container -->
+        <div class="archive-table" style="margin-top: var(--space-md);">
+          <!-- Header (hidden on mobile, shown on desktop) -->
+          <div class="archive-table-header">
+            <div>HASTALIK & SEVİYE</div>
+            <div>KLİNİK PREZANTASYON & BULGULAR</div>
+            <div>TEDAVİ & İLAÇ PROTOKOLÜ</div>
+          </div>
+
+          <!-- Rows Container -->
+          <div id="archive-list-container" style="display: flex; flex-direction: column; gap: var(--space-md); border: 1px solid var(--border-glass); border-top: none; border-radius: 0 0 var(--radius-md) var(--radius-md); padding: var(--space-md); max-height: 800px; overflow-y: auto; background: rgba(0,0,0,0.1);">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MODALS: DIAGNOSIS & TREATMENT
+       ═══════════════════════════════════════════ -->
+
+  <!-- Diagnosis Choice Modal -->
+  <div class="modal-overlay" id="diagnosis-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>🏥 Hastaya Teşhis Koy</h2>
+        <button class="btn btn-ghost btn-icon" onclick="closeDiagnosisModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted mb-md">
+          Aşağıdaki listeden doğru teşhisi arayın veya seçin. Yanlış teşhis puan kaybettirir (-30).
+        </p>
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="diagnosis-search" placeholder="Hastalık ismi arayın... (Örn: STEMI, Apandisit)">
+        </div>
+        <div class="diagnosis-list" id="diagnosis-list">
+          <!-- Populated dynamically with 200+ disease names -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-ghost" onclick="closeDiagnosisModal()">İptal</button>
+        <button class="btn btn-primary" onclick="confirmDiagnosis()">Tanıyı Onayla</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Treatment Choice Modal -->
+  <div class="modal-overlay" id="treatment-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>💊 Tedavi Planı & İlaç Siparişi</h2>
+        <button class="btn btn-ghost btn-icon" onclick="closeTreatmentModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted mb-md">
+          Tanı doğrulandı! Şimdi hastayı iyileştirecek uygun tedaviyi/ilaçları seçin. 
+          Yanlış veya kontraendike tedaviler hastaya zarar verebilir (-40).
+        </p>
+        
+        <div class="info-section-title">İLAÇ VE MÜDAHALE SEÇİN</div>
+        <div class="test-list mb-md" id="medications-selection" style="max-height: 250px; overflow-y: auto;">
+          <!-- Populated dynamically -->
+        </div>
+
+        <div class="info-section-title">📞 KONSÜLTASYON YÖNLENDİRMESİ</div>
+        <select class="search-input mt-sm" id="consultation-selection" style="padding-left: 12px; margin-bottom: var(--space-md);">
+          <option value="">-- Yönlendirilecek Birim Seçin (Opsiyonel) --</option>
+          <option value="kardiyoloji">Kardiyoloji</option>
+          <option value="gogus">Göğüs Hastalıkları</option>
+          <option value="cerrahi">Genel Cerrahi</option>
+          <option value="noroloji">Nöroloji</option>
+          <option value="enfeksiyon">Enfeksiyon Hastalıkları</option>
+          <option value="kadin_dogum">Kadın Hastalıkları ve Doğum</option>
+          <option value="psikiyatri">Psikiyatri</option>
+          <option value="ortopedi">Ortopedi ve Travmatoloji</option>
+          <option value="urologi">Üroloji</option>
+          <option value="nefroloji">Nefroloji</option>
+          <option value="hematoloji">Hematoloji</option>
+          <option value="romatoloji">Romatoloji</option>
+          <option value="endokrinoloji">Endokrinoloji</option>
+          <option value="gastroenteroloji">Gastroenteroloji</option>
+          <option value="dermatoloji">Dermatoloji</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="confirmTreatment()">Tedaviyi Uygula ve İlerle</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW: Consultation Hint Modal -->
+  <div class="modal-overlay" id="consultation-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>📞 Uzmana Danış (Konsültasyon İste)</h2>
+        <button class="btn btn-ghost btn-icon" onclick="closeConsultationModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted mb-md">
+          Tanı koymakta veya test istemekte zorlanıyorsanız bir uzman hekime danışıp ipucu alabilirsiniz.
+        </p>
+        <div class="info-section-title" style="color: var(--color-warning); font-weight: 700; margin-bottom: var(--space-md);">
+          ⚠️ KONSÜLTASYON BEDELİ: -20 PUAN
+        </div>
+        
+        <div class="info-section-title">DANIŞILACAK UZMANLIK ALANI SEÇİN</div>
+        <select class="search-input mt-sm" id="consult-department-selection" style="padding-left: 12px;">
+          <option value="">-- Uzmanlık Seçin --</option>
+          <option value="kardiyoloji">Kardiyoloji (Kalp Hastalıkları)</option>
+          <option value="gogus">Göğüs Hastalıkları (Akciğer)</option>
+          <option value="cerrahi">Genel Cerrahi (Akut Karın/Travma)</option>
+          <option value="noroloji">Nöroloji (İnme/Beyin)</option>
+          <option value="enfeksiyon">Enfeksiyon Hastalıkları (Ateş/Sepsis)</option>
+          <option value="kadin_dogum">Kadın Hastalıkları (Gebelik/Adneks)</option>
+          <option value="psikiyatri">Psikiyatri</option>
+          <option value="ortopedi">Ortopedi</option>
+          <option value="urologi">Üroloji (Böbrek/İdrar Yolları)</option>
+          <option value="nefroloji">Nefroloji (Böbrek/Tansiyon)</option>
+          <option value="romatoloji">Romatoloji (Eklem/Otoimmün)</option>
+          <option value="hematoloji">Hematoloji (Kan Hastalıkları)</option>
+          <option value="endokrinoloji">Endokrinoloji (Hormon/Şeker)</option>
+          <option value="gastroenteroloji">Gastroenteroloji (Mide/Bağırsak)</option>
+          <option value="dermatoloji">Dermatoloji (Cilt/Döküntü)</option>
+          <option value="pediatri">Çocuk Sağlığı (Pediatri)</option>
+          <option value="toksikoloji">Toksikoloji / Acil (Zehirlenme)</option>
+          <option value="anestezi">Anestezi / Reanimasyon (Yoğun Bakım)</option>
+          <option value="gogus_cerrahisi">Göğüs Cerrahisi (Akciğer Sönmesi)</option>
+          <option value="kdc">Kalp Damar Cerrahisi (DVT/Diseksiyon)</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-ghost" onclick="closeConsultationModal()">İptal</button>
+        <button class="btn btn-primary" onclick="confirmConsultation()">Konsültasyon İste</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW: Feedback/Karne Modali (Tanı Sonrası Değerlendirme Raporu) -->
+  <div class="modal-overlay" id="feedback-modal">
+    <div class="modal" style="max-width: 750px;">
+      <div class="modal-header" style="background: var(--bg-tertiary);">
+        <h2>🩺 Vaka Performans Değerlendirme Raporu</h2>
+      </div>
+      <div class="modal-body">
+        <div class="text-center mb-md">
+          <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-green);" id="fb-case-title">Hastalık Adı</div>
+          <div class="text-muted" style="font-size: 0.85rem;" id="fb-patient-name">Hasta: Mehmet Y., 45 Yaş</div>
+        </div>
+
+        <div class="summary-breakdown" id="fb-breakdown-container" style="margin: 0 0 var(--space-lg) 0;">
+          <!-- Will be generated dynamically -->
+        </div>
+
+        <div style="background: rgba(0,0,0,0.15); padding: var(--space-md); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin-bottom: var(--space-md);">
+          <div class="info-section-title" style="color: var(--accent-blue); font-size: 0.8rem;">👩‍⚕️ Klinik Açıklama ve Geri Bildirim</div>
+          <p id="fb-clinical-note" style="font-size: 0.85rem; line-height: 1.6; color: var(--text-primary); margin-top: var(--space-xs); font-style: italic;">
+            Klinik geri bildirim yükleniyor...
+          </p>
+        </div>
+
+        <div class="flex justify-between items-center" style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-md);">
+          <div style="font-family: var(--font-mono); font-size: 1rem;">
+            Vaka Skoru: <span id="fb-net-score" style="font-weight: 700; color: var(--accent-green);">+100</span>
+          </div>
+          <div class="flex gap-sm">
+            <button class="btn btn-secondary" onclick="closeFeedbackModalAndGoHome()">Ana Menüye Dön</button>
+            <button class="btn btn-primary" onclick="closeFeedbackModalAndAdvance()">Yeni Vakaya İlerle ➔</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules and Code Files -->
+  <script src="js/data/tests.js"></script>
+  <script src="js/data/drugs.js"></script>
+  <script src="js/data/diseases.js"></script>
+  <script src="js/data/cases.js"></script>
+  <script src="js/monitor.js"></script>
+  <script src="js/game-engine.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

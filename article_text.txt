@@ -1,0 +1,435 @@
+
+--- Page 1 ---
+Muğla Sıtkı Koçman Üniversitesi Tıp Dergisi 2021;8(1):1-4   Orijinal Makale/Original Article 
+Medical Journal of Mugla Sitki Kocman University 2021;8(1):1-4  Sert et al. 
+Doi:10.47572/muskutd.794039                                                                                                                                                                                                .                                                                                                                                                                                                                                                  
+.                               
+1 
+ 
+Acil Servisimize Başvuran Hastaların 5 Yıllık Analizi 
+  
+5-Year Analysis of Patients Admitted to Our Emergency Department 
+   
+Ekrem Taha SERT1, Hüseyin MUTLU1, Kerim YEŞİLDAĞ2, Kamil KOKULU1, Ayhan SARITAŞ1 
+ 
+1Aksaray Üniversitesi, Tıp Fakültesi, Acil Tıp Kliniği, Aksaray 
+ 2Konya Numune Hastanesi Göğüs Hastalıkları Bölümü, Konya 
+  
+Öz Abstract 
+Acil servise başvuran kritik hastalıkların özelliklerinin bilinmesi, 
+en kısa sürede tanı alması ve doğru tedavilerinin başlamasında 
+hayati öneme sahiptir Çalışmamızda acil servise başvuran 
+hastaların demografik ve klinik özelliklerini incelemeyi 
+amaçladık. Ocak 2015 ile Aralık 2019 tarihleri arasında 
+hastanemiz üçüncü basamak acil servisine ba şvuran tüm erişkin 
+ve çocuk hastalar retrospektif olarak değerlendirildi. Hastaların 
+demografik özellikleri, hastalık tanıları ve yıllara göre başvuru 
+oranları değerlendirildi. Acile servise beş yıl içerisinde başvuran 
+hasta sayısı 2.254.302 olarak tespit edildi. Hastaların %50.9’u 
+erkek ve %49.1’i kadındı ve yaş gruplarına göre başvuru sıklığı 
+değerlendirildiğinden yoğun grubun %26.73 ile 10 yaş ve altı 
+olduğu görüldü. En çok başvuru %51 ile 16:00 -24:00 saatleri 
+arasında idi.  Hastaların en sık solunum sist emi 
+problemleri(%24,71) ile acile başvurduğu tespit edildi. Acil 
+servise başvuran hastaların %2.24’ü ilgili bölümlere, %0.77’sinin 
+ise yoğun bakım ünitesine yatırıldığı tespit edildi. Acil servislere 
+başvuru oranının yüksek olması beraberinde aşırı hasta 
+yoğunluğuna neden  olmaktadır. Acil servise başvuran hasta 
+profilinin belirlenmesi, verilecek hizmet sunumu ve hasta bakım 
+kalitenin artırılmasında faydalı olacaktır. 
+ 
+It is vital to know the characteristics of critical diseases admitted to 
+the emergency department, to diagnose as soon as possible and to 
+start the right treatment. In our study, we aimed to examine the 
+demographic and clinical characteristics of the patients admitted to 
+the emergency department. All adult and pediatric patients who 
+admitted to the tertiary care emergency department of our hospital 
+between January 2015 and December 2019 were evaluated 
+retrospectively. The demographic characteristics of the patients, 
+diagnoses and application rates according to the years were 
+evaluated. The numbe r of patients admitted to the emergency 
+department within five years was 2,254,302. 50.9% of the patients 
+were male and 49.1% were female. When the frequency of 
+application was evaluated according to the age groups, it was seen 
+that the most intense group was those aged 10 and below with 
+26.73%. The highest application rate was between 4 p.m -12 p.m. 
+with 26.73%. It was found that the patients were admitted to the 
+emergency department most frequently with respiratory system 
+problems (24.71%). It was determin ed that 2.24% of the patients 
+admitted to the emergency department were hospitalized in the 
+relevant wards and 0.77% were transferred to the intensive care unit. 
+The high rate of admission to emergency departments also causes 
+excessive patient density. Det ermining the patient profile that 
+admitted to the emergency department will be useful in increasing 
+the quality of service delivery and patientcare. 
+Anahtar Kelimeler : Acil Servis , Demografik Özellikler, Hasta 
+Profili, Hasta Sayısı 
+Keywords: Demographic Characteristics, Emergency Department,  
+Number of Patients, Patient Profile 
+Giriş 
+ 
+ Acil servisler günün 24 saati sağlık hizmeti 
+veren ve her türlü acil tıbbi hizmetlerin verildiği en 
+önemli birimlerdir  (1).Bu nedenle hastalıkların 
+çeşitliliği sınırsızdır. Acil servise başvuran kritik 
+hastalıkların özelliklerinin bilinmesi, en kısa sürede 
+tanı alması ve doğru tedavilerinin başlamasında 
+hayati öneme sahiptir. Acil servisler  tedavi 
+gerektiren kritik hastaların bakıldığı yer olması 
+gerekirken, acil olmayan ve basit -hafif şikayetleri 
+olan hastaların başvurduğu birimler haline gelmiştir  
+(2). Bu durum, sağlık hizmetinin kalitesini düşürerek 
+ciddi hastalığı ve gerçek acil olan hastalara 
+gösterilmesi gereken dikkat ve özenin azalmasına ve 
+acil servis personelinin iş yükünü artırmasına neden 
+olmaktadır (3,4). Ayrıca ciddi hastalığı olan 
+hastalarda müdahalede gecikmeye ve hasta 
+memnuniyetinin azalmasına neden olmaktadır  
+(5,6).Özellikle ülkemizde diğer ülkelere oranla acil 
+servislere çok fazla sayıda hasta başvurduğu 
+bilinmektedir. Bunun nedeni acil servis t anımına 
+uygun şekilde başvurunun yapılmaması ve acil 
+servislerin birinci basamak sağlık birimleri gibi 
+kullanılmasıdır. 
+Acil servislere başvuran hastaların sayısı, 
+demografik özelliklerini, hastalıklara göre 
+dağılımlarını ve acil serviste nasıl 
+sonlandırıldıklarını belirleyerek, kaliteli acil sağlık 
+hizmetinin neresinde olduğumuzu gösterebileceği 
+düşünülmektedir. Bu nedenle çalışmamızda acil 
+servise başvuran hastaların demografik ve klinik 
+özelliklerini incelemeyi amaçladık. 
+ 
+Gereç ve Yöntem 
+ 
+Bu tanımlayıcı çalışmada 1 Ocak 2015 ile 31 
+Aralık 2019 tarihleri arasında hastanemiz  üçüncü 
+basamak acil servisine başvuran tüm erişkin ve 
+çocuk hastalar değerlendirildi.  Hastaların dosyaları 
+retrospektif olarak taranarak veriler elde edildi. 
+ ORCID No 
+Ekrem Taha SERT 0000-0002-7208-2186 
+Hüseyin MUTLU 0000-0002-1930-3293 
+Kerim YEŞİLDAĞ 0000-0002-9151-4124 
+Kamil KOKULU 0000-0002-6123-0898 
+Ayhan SARITAŞ 0000-0002-4302-1093 
+  
+Başvuru Tarihi / Received: 12.09.2020 
+Kabul Tarihi / Accepted   : 07.01.2021 
+  
+Adres / Correspondence   : Hüseyin MUTLU 
+Acil Tıp Kliniği, Aksaray Üniversitesi Tıp Fakültesi,  Aksaray 
+e-posta / e-mail        :   hmutlu70@hotmail.com 
+--- Page 2 ---
+Muğla Sıtkı Koçman Üniversitesi Tıp Dergisi 2021;8(1):1-4   Orijinal Makale/Original Article 
+Medical Journal of Mugla Sitki Kocman University 2021;8(1):1-4  Sert et al. 
+Doi:10.47572/muskutd.794039                                                                                                                                                                                                .                                                                                                                                                                                                                                                  
+.                               
+2 
+ 
+Çalışma Aksaray Üniversitesi Etik Kurulu’ndan izin 
+alınarak yapılmıştır (22.06.2020, No:2020/06-69). 
+Hastaların demografik özelliklerine ait verilere  
+(yaş ve cinsiyet dağılımları), başvuru zamanı  (gün, 
+ay ve saat), yıllara göre hasta sayıları ve triyaj 
+kategorileri, hastaların tanı dağılımları  ile acil 
+servisten diğer servislere ve yoğun bakım ünitesine 
+yatırılan hasta sayıları  (yatış, taburcu, sevk) 
+bilgisayar tabanlı hasta kayıt sistemi (Hastane Bilgi 
+Yönetim Sistemi) kullanılarak ulaşıldı. 
+Çalışmadan elde edilen veriler, Microsoft Excel 
+Çalışma programı kullanılarak analiz edilmiştir. 
+Çalışma verileri değer lendirilirken tanımlayıcı 
+istatistiksel yöntemleri (frekans (n) ve yüzde  (%) 
+cinsinden) hesaplandı. 
+ 
+Bulgular 
+ 
+Beş yıllık süre içinde acil servise başvuran 
+toplam 2.254.302 erişkin ve çocuk hastalar 
+retrospektif olarak incelendi. Acil servise başvuru 
+yapan hastaların; hastalık tanıları, yaş, cinsiyet, 
+başvuru yılları, başvuru ayları ve başvuru saatleri 
+baz alınarak değerlendirilmiştir.  Cinsiyetlere göre 
+dağılım incelendiğinde; %50.9’u erkek, %49.1’i 
+kadın olduğu saptandı. Hastaların yaş gruplarına 
+göre başvuru sıklığı incelendiği nde, 10 yaş ve altı 
+grubun (%26.73) en yüksek oranda olduğu görüldü. 
+Bunu %18. 34 ile 20 -29 yaş grubu  izlerken, en az 
+başvuru ise %6.96 ile 50-59 yaş grubunda idi (Tablo 
+1).  
+ 
+Tablo 1. Hastaların yaş gruplarına göre dağılımı 
+Yaş Grupları Sayı (n) % 
+≤10 yaş 602.639 26,73 
+11-19 yaş 305.751 13,56 
+20-29 yaş 413.416 18,34 
+30-39 yaş 313.764 13,92 
+40-49 yaş 224.942 9,98 
+50-59 yaş 156.926 6,96 
+≥60 yaş 236.864 10,51 
+Toplam 2.254.302 100 
+ 
+Acil servise başvuran hasta sayısı her yıl bir 
+önceki yıla göre belirgin artış göstererek  532.450 
+başvuru ile 2019 yılında en fazla olduğu 
+görülmektedir (Resim 1).  
+Hastaların başvurula rı saat aralıklarına göre 
+değerlendirildiğinde, en çok başvurunun %51 ile 
+16:00-24:00 saatleri arasında olduğu gözlendi. 
+08:00-16:00 saatleri arasında başvuran hastaların 
+oranı %39, 00:00 -08:00 saatleri arasında bu oran 
+%10 olarak tespit edildi (Resim 2). 
+ 
+Hastaların triyaj kategorilerine bakıldığında 
+%79.7’sinin (n=1.797.224) yeşil (acil olmayan), 
+%20’sinin (n=450.160) triyaj sarı (acil), %0.3’ünün 
+(n=6.918) kırmızı (çok acil) şeklinde olduğu 
+saptandı (Tablo 2). 2019 yılında yeşil alan hastasının 
+(n=410.307) 2015 yılına göre  (n=295.265) %6.4  
+oranında arttığı tespit edildi. Aylara göre başvuru 
+oranlarına bakıldığında, 2015 yılı nda en çok Mart 
+ayında, 2016’da Ocak, 2017’de Ocak, 2018’de 
+Ağustos ve 2019’da ise Aralık ayı olduğunu tespit 
+ettik (Tablo 3). Hastalık gruplarına göre hastaların 
+dağılımı incelendiğinde; en sık solunum sistemi 
+problemleri (%24.71) olduğu görüldü. Bunu 
+kas/iskelet sistemi problemleri  (%17.46) ve  
+kardiyovasküler problemler  (%14,55) izledi (Tablo 
+4). Hastalarımızın %2.24’ünün (n=50.617) ilgili 
+klinik servislere yatmış olduğu,%0.77’si (n=17.413) 
+yoğun bakım ünitesine  yatışlarının yapıldığı tespit 
+edildi (Tablo 5). 2018 yılında diğer yıllara göre acil 
+servis den yoğun bakım ünitesi yatırılan hasta 
+sayısının daha fazla olduğu görülmektedir. Sevk 
+edilen hasta sayımız 2015 yılında 619, 2016 yılında 
+741, 2017 yılında 553, 2018 yılında 471, 2019 
+yılında ise 375’dir. 
+ 
+Tartışma  
+ 
+Acil servisler, kritik hastalara zamanında gerekli 
+tıbbi müdahale ve bakımın yapıldığı sağlık 
+birimleridir. Artan nüfusa ve sağlık hizmetlerine 
+erişimin kolaylaşmasına paralel olarak hastaların 
+acil servise başvurularında da artış olmaktadır  (7). 
+Artan bu yoğunluk içindeki acil servis hizmetlerinin 
+hızlı, doğru ve kesintisiz olması için acil servislerin 
+tanımına uygun olarak hizmet vermesi önemlilik arz 
+etmektedir.  Bu nedenle acil servislere başvuran 
+hastaların sayı ve özelliklerinin bilinmes i acil 
+servislerde nasıl bir hizmet verileceğini belirlenmesi 
+açısından oldukça önemlidir. 
+ 
+Resim 1. 2015-2019 yılları arasında Acil Servise başvuran 
+hasta sayısı 
+Resim 2. Hastaların Acil Servise başvurdukları zaman 
+aralıkları 
+
+--- Page 3 ---
+Muğla Sıtkı Koçman Üniversitesi Tıp Dergisi 2021;8(1):1-4   Orijinal Makale/Original Article 
+Medical Journal of Mugla Sitki Kocman University 2021;8(1):1-4  Sert et al. 
+Doi:10.47572/muskutd.794039                                                                                                                                                                                                .                                                                                                                                                                                                                                                  
+.                               
+3 
+ 
+ 
+ 
+ 
+ 
+Tablo 2. Triyaj renk kodları açısından hastaların yıllara göre dağılımı 
+Triyaj Renk Kodları 2015 2016 2017 2018 2019 Toplam 
+Yeşil 295.265 336.778 361.966 392.908 410.307 1.797.224 
+Sarı 72.136 68.624 83.532 104.428 121.440 450.160 
+Kırmızı 2.386 1.692 1.246 941 653 6.918 
+ 
+Tablo 3. Hasta başvurularının aylara göre dağılımı 
+Aylar 
+Yıllar 
+2015 2016 2017 2018 2019 
+N % N % N % N % N % 
+Ocak 26.388 7.16 45.153 11.07 42.159 9.44 39.474 7.92 41.551 7.80 
+Şubat 25.582 6.94 28.972 7.10 32.861 7.36 35.979 7.22 34.922 6.56 
+Mart 34.975 9.48 32.790 8.04 36.449 8.16 43.725 8.78 46.697 8.77 
+Nisan 30.935 8.39 31.416 7.70 32.950 7.38 40.308 8.09 46.314 8.70 
+Mayıs 29.662 8.04 32.107 7.87 34.242 7.66 39.582 7.94 37.654 7.07 
+Haziran 25.928 7.03 28.589 7.01 30.697 6.87 38.323 7.69 42.199 7.93 
+Temmuz 33.101 8.98 36.819 9.02 38.188 8.55 43.773 8.78 43.235 8.12 
+Ağustos 34.832 9.45 37.274 9.13 42.982 9.62 52.498 10.54 49.066 9.22 
+Eylül 32.097 8.70 35.685 8.75 41.926 9.38 41.188 8.27 45.836 8.61 
+Ekim 32.448 8.80 35.579 8.72 39.845 8.92 42.176 8.46 47.137 8.85 
+Kasım 30.129 8.17 30.941 7.58 33.822 7.57 36.555 7.34 43.372 8.15 
+Aralık 32.710 8.87 32.719 8.02 40.623 9.09 44.696 8.97 54.467 10.23 
+ 
+Tablo 4. Hastalık gruplarına göre hastaların dağılımı 
+Hastalık Grupları Hasta Sayısı (n) % 
+Kardiyovasküler S. 328.076 14.55 
+Travma 137.565 6.1 
+Solunum S. 557.076 24.71 
+Nörolojik 64.100 2.84 
+GİS 236.993 10.51 
+Enfeksiyon Hst. 34.414 1.53 
+Kas-İskelet S. 393.667 17.46 
+Üriner S. 58.733 2.61 
+Jinekolojik-Obstetrik S. 21.708 0.96 
+Endokrin-Metabolik Hst. 25.437 1.13 
+Psikiyatrik Hst. 18.686 0.83 
+Zehirlenmeler 1.618 0.07 
+Allerji Hst. 77.048 3.42 
+Yenidoğan 12.953 0.57 
+Hematolojik-Onkolojik Hst. 3.971 0.18 
+Göz Hst. 1.541 0.07 
+KBB 225.401 9.99 
+Diğer 55.315 2.45 
+ 
+Tablo 5. Servisler ve Yoğun Bakım Ünitesine yatırılan hastaların yıllara göre dağılımı 
+ 2015 2016 2017 2018 2019 Toplam 
+Servis 9.565 8.287 8.624 10.193 13.948 50.617 
+Yoğun Bakım Ünitesi 3.034 3.521 3.642 3.770 3.446 17.413 
+ 
+Acil servise başvuran hastalarla ilgili yapılan 
+bazı çalışmada kadınların acil servislere daha fazla 
+başvurduğu tespit edilmiştir (5,6). Çalışmamızda ise 
+erkeklerin (%50.9) oranı kadınların oranı ile (%49.1) 
+hemen hemen eşit olduğu görülmüştür. Köse ve ark. 
+Yaptıkları çalışmada acile başvuran hastaların 
+%77’sinin 17-65 yaş arasında, %14.7’ü  1-16 yaş 
+arasında, %7.1’i ise 65 yaş ve üzeri oldu ğu 
+görülmüştür (8). Başka bir çalışmaya göre, acil 
+servise başvuran hastaların %24.6’sı 14-30 yaş arası, 
+%13’ü 31-40 yaş arası, %16.2’si 41-50 yaş arası ve 
+%41’i ise 50 yaş ve üstü hastalar olduğu tespit 
+--- Page 4 ---
+Muğla Sıtkı Koçman Üniversitesi Tıp Dergisi 2021;8(1):1-4   Orijinal Makale/Original Article 
+Medical Journal of Mugla Sitki Kocman University 2021;8(1):1-4  Sert et al. 
+Doi:10.47572/muskutd.794039                                                                                                                                                                                                .                                                                                                                                                                                                                                                  
+.                               
+4 
+ 
+edilmiştir (1). Çalışmamızdaki hastaların yaş 
+gruplarına göre dağılımı değerlendirildiğinde, diğer 
+çalışmalardan farklı olarak en yoğun grubun %26.73 
+ile 10 yaş ve altı olduğu görüldü. Bunu  %18.34 ile 
+20-29 yaş grubu izledi. Hasta tanılarıyla beraber 
+incelendiğinde 10 yaş ve altı grubundaki bu 
+farklılığın n edeninin ebeveynlerin çocuklarla ilgili 
+her türlü yakınmayı acil olarak algılaması nedeniyle 
+acil müdahale gerektirmeyen şikayetler için de acil 
+servise başvurmalarına bağlı olabileceği 
+düşünülmüştür. 
+Çalışmamızda hastaların en çok başvuru saatinin 
+16:00-24:00 (%51) arasında olduğu gözlendi. 08:00-
+16:00 saatleri arasında %39, 00:08:00 saatleri 
+arasında bu oran %10 idi. Aydın ve ark.  (9) 
+yaptıkları çalışmada hastaların %53.3’ününacil 
+servise başvuru saatinin 08:00 -16:00 arasında 
+olduğu, Sucu ve ark.  (10) çal ışmasında hastaların 
+%45.3’ünün acil servise başvuru saatinin 12.00 -
+18.00 arasında olduğu belirlenmiştir. Bizim 
+çalışmadaki acil servisi başvuran hasta sayısı mesai 
+saatleri dışında daha da artmaktadır.  İnsanların 
+işlerinden döndükten sonra acile başvurmal arı ve 
+normal poliklinik hizmetlerine göre tetkik -tedavi 
+işlemlerinin daha hızlı yapılması bu yoğunluğun 
+nedenleri olabileceğini düşünmekteyiz. 
+Beş yıllık süre içinde hastalık gruplarına göre 
+hastaların dağılımları incelendiğinde, sıklık sırasına 
+göre, %24 .71’i (557.076) solunum sistemi, 
+%17.46’sı (n=393.667) kas/iskelet sistemi, %14.55’i 
+(n=328.076) kardiyovasküler, %10 .51’i 
+(n=236.993) gastrointestinal problemlerin izlediği 
+tespit edilmiştir. Görüldüğü üzere hastaların tanıları 
+değerlendirildiğinde solunum sistemi problemleri ile 
+başvuran hastalar ilk sıralarda yer almaktadır. Bu da 
+acil servise yapılan başvuruların özellikleri hakkında 
+bir fikir vermektedir. 
+Triyaj kategorileri incelendiğinde, acil servise 
+başvuran hastaların %79.7’sinin  yeşil (acil 
+olmayan), %20’si sarı (acil), %0.3’ünün kırmızı (çok 
+acil) şeklinde sınıflandırıldığı tespit ettik. Yıllara 
+göre triyaj kategorileri incelendiğinde, 2019 yılında 
+yeşil (acil olmayan) alan başvurularında artış 
+gözlenirken, kırmızı (çok acil) alan başvurularda 
+diğer yıllara göre azalma olduğu tespit ettik. Oktay 
+ve ark.  (6) çalışmalarında; kategorilendirme ve 
+hekim kararları sonrasında, başvuruların 
+%31.2’sinin acile başvuru için uygun olmadığını 
+göstermişlerdir. Başka bir çalışmaya göre acil 
+servislerin uygunsuz kullanımının %5 –82 arasında 
+değiştiğini belirtmektedir  (11).Kılıçaslan ve ark.  
+(12) bir üniversite hastanesinde yaptıkları çalışmada 
+acil olmayan hastaların oranı %47.24 olarak 
+belirtmiş. Aynı çalışmada hastaların hastaneye yatış 
+oranı %12 olarak bulunmuşt ur. Diğer bir çalışmada 
+ise acil servisten diğer servislere yatış oranları %11.9 
+olarak tespit edilmiştir  (13). Yapılmış birçok 
+çalışmada acil servislerden taburculuk oranlarının 
+%81-87 arasında olduğu görülmüştür  (9,12,14). 
+Çalışmamızda beş yıllık süreçte hastaların %96.99’u 
+acil servisten ayaktan taburcu edilirken, %2.24’ü 
+ilgili bölümlere, %0.77’si yoğun bakım ünitesine 
+yatışının yapıldığı tespit edildi. Buna göre başvuran 
+hastaların büyük çoğunluğunun acil servis tanımına 
+uygun olmadığını tespit ettik. 
+Sonuç olarak, acil servisler  multidisipliner 
+yaklaşım ve acil müdahale gerektiren birçok 
+hastanın değerlendirildiği önemli birimlerdir. Hasta 
+yoğunluğu ve acil servislere yapılan başvuruların 
+fazlalığı nedeniyle sağlık durumu daha ciddi olan 
+hastalara veri lmesi gereken özen ve dikkatin 
+azalmasına neden olmaktadır. Bu nedenle acile 
+başvuran hastaların sayı ve niteliğinin bilinmesi acil 
+servislerde verilecek hizmeti belirlemek bakımından 
+oldukça önemlidir. 
+ 
+Etik Kurul Onayı:  Aksaray Üniversitesi Etik 
+Kurulu’ndan 22.06.2020 tarih ve 2020/06-69 nolu 
+yazı ile izin alınmıştır. 
+ 
+Kaynaklar  
+ 
+1. Polat O, Kabaçam G, Güler İ, Ergişi K, Yıldız A. İbn -i Sina 
+Hastanesi Acil Servis’ne  başvuran hastaların sürveyans 
+analizi. Türkiye Acil Tıp Derg. 2005;5(2):78-81. 
+2. Ersel M, Karcıoğlu Ö, Yanturalı  S, ve ark. Bir acil servisin 
+kullanım özellikleri ve başvuran hastaların aciliyetinin hekim 
+ve hasta açısından değerlendirilmesi. Türkiye Acil Tıp Derg. 
+2006;6(1):25-35. 
+3. Coleman P, Irons R, Nicholl  J. Will alternative immedi ate 
+care services reduce demands for non -urgent treatment at 
+accident and emergency? Emerg Med J. 2001;18(6):482–7. 
+4. Eroglu SE, Toprak SN, Urgan O,  et al. Evaluation of non -
+urgent visits to a busy urban emergency  department. Saudi 
+Med J. 2012;33(9):967-72. 
+5. Edirne T, Edirne Y, Atmaca B, Keskin S. Yüzüncü Yıl 
+Üniversitesi Tıp Fakültesi Acil Servis hastalarının özellikleri. 
+Van Tıp Derg. 2008;15(4):107-11. 
+6. Oktay C, Cete Y, Eray O, Pekdemir M, Gunerli A. 
+Appropriateness of emergency department visits in a Turkish 
+university hospital. Croa tMed J. 2003;44(5):585-91. 
+7. Herring, AA, Ginde AA, Fahimi J, et al. Increasing  critical 
+care admissions from U.S. emergency  departments, 2001 -
+2009.Crit Care Med. 2013;41(5):1197-204. 
+8. Köse A, Köse B, Öncü MR, Fu zuli T.  Bir devlet hastanesi 
+acil servisine başvuran hastaların profili ve başvurunun 
+uygunluğu. Gaziantep Tıp Derg. 2011;17(2): 57-62. 
+9. Aydın T, Aydın ŞA, Köksal Ö, ve ark. Uludağ Üniversitesi 
+Tıp Fakültesi Hastanesi Acil Servisi’ne başvuran hastaların 
+özelliklerinin ve acil servis çalışmalarının değerlendirilmesi. 
+Akademik Acil Tıp Derg. 2010:9(4):163-8. 
+10. Sucu G, Cebeci F, Karazeybek E. Acil servisteki kritik hasta 
+yakınlarının gereksinimleri ve karşılanma durumu. Ulusal 
+Travma Acil Cerrahi Derg. 2009;15(5):473-81. 
+11. Gill JM. Non  urgent use of the  emergency department: 
+Appropriate or not? Ann Emerg Med.1994; 24(5):953-7. 
+12. Kılıçaslan İ, Bozan H, Oktay C, Göksu E. Türkiye’de acil 
+servise başvuran hastaların demografik özell ikleri. Türkiye 
+Acil Tıp Derg. 2005;5(1):5-13. 
+13. Kurtoğlu Çelik G, Karakayalı O, Temrel TA, et al. Evaluatıon 
+Of Patıents Transported To The Emergency Department By 
+112. Turkish Med J. 2012;6(3):73-6. 
+14. Karakaya Z, Gökel Y, Açıkalın A, Karakaya O. Acil Tıp 
+Anabilim dalında konsültasyon sisteminin işleyişi ve 
+etkinliğinin değerlendirilmesi.  Ulus Travma Acil Cerrahi 
+Derg. 2009;15(3):210. 
+ 
